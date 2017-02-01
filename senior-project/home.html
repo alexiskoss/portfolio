@@ -1,0 +1,453 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+
+<link href='css/fonts.css' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
+<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<!-- Load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+ 
+<!-- Load ScrollTo -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+ 
+<!-- Load LocalScroll -->
+<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>		
+
+
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        
+<link rel="stylesheet" type="text/css" href="css/styleslider.css" />
+       
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		
+<noscript>
+<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" /></noscript>
+   
+</head>
+    
+
+<body>
+        
+    
+<script>
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 620) { 
+        $('.menu').css("background-color", "rgba(0,0,0,0.8)");
+    }
+    else{
+        $('.menu').css("background-color", "rgba(0,0,0,0.0)");
+    }
+});
+</script>
+
+	<div class="menu">
+		<div class="container clearfix">
+
+
+			<div id="logo" class="grid_3">
+				<img src="http://i43.tinypic.com/2m4f5ep.jpg">
+			</div>
+
+			<div id="nav">
+				<ul class="navigation">
+					<li data-slide="1">Home</li>
+					<li data-slide="2">About</li> 
+					<li data-slide="3">Services</li> 
+					<li data-slide="4">Work</li> 
+					<li data-slide="5">Contact</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="slide" id="topheader" data-slide="1" data-stellar-background-ratio="0.5">
+
+    		<div class="container2 demo-1">
+		
+			
+           		<div id="slider" class="sl-slider-wrapper">
+
+	
+				<div class="sl-slider">
+
+					<div class="sl-slide bg-1" data-orientation="horizontal">
+								<div class="sl-slide-inner">
+	
+							<blockquote>Lorem ipsum <strong>sit amet</strong></blockquote>			</div>
+							</div>
+
+	
+					<div class="sl-slide bg-2" data-orientation="vertical" >
+							<div class="sl-slide-inner">
+									<blockquote>Lorem ipsum <strong>sit amet</strong></blockquote>							</div>
+						
+					</div>
+					
+					
+					<div class="sl-slide bg-5" data-orientation="horizontal">
+								<div class="sl-slide-inner">
+									<blockquote>Lorem ipsum <strong>sit amet</strong></blockquote>
+								</div>
+					
+					</div>
+	
+	</div>	
+
+
+	<nav id="nav-arrows" class="nav-arrows">
+				
+	<span class="nav-arrow-prev">Previous</span>
+									<span class="nav-arrow-next">Next</span>
+	</nav>
+
+		
+
+	<nav id="nav-dots" class="nav-dots">
+					
+	<span class="nav-dot-current"></span>
+											<span></span>
+					
+		<span></span>
+
+	</nav>
+
+</div></div>
+		
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		
+	<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		
+	<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		
+	<script type="text/javascript">	
+					$(function() {
+	var Page = (function() {
+
+ var $navArrows = $( '#nav-arrows' ),
+ $nav = $( '#nav-dots > span' ), slitslider = $( '#slider' ).slitslider( {
+	onBeforeChange : function( slide, pos ) {
+
+ $nav.removeClass( 'nav-dot-current' );
+ $nav.eq( pos ).addClass( 'nav-dot-current' );
+
+}
+ } ),
+
+ init = function() {
+
+ initEvents();
+},
+ initEvents = function() {
+
+ 
+	// add navigation events
+	
+	$navArrows.children( ':last' ).on( 'click', function() {
+
+ slitslider.next();
+ return false;
+
+});
+
+$navArrows.children( ':first' ).on( 'click', function() {
+slitslider.previous();
+	return false;
+
+} );
+
+$nav.each( function( i ) {
+$( this ).on( 'click', function( event ) {
+var $dot = $( this );
+if( !slitslider.isActive() ) {
+
+$nav.removeClass( 'nav-dot-current' );
+$dot.addClass( 'nav-dot-current' );
+}slitslider.jump( i + 1 );
+return false;} );} );
+
+};
+
+return { init : init };
+
+})();
+
+Page.init();
+
+});
+		</script>
+	
+
+<div class="container clearfix">
+
+	<div id="content" class="grid_7 omega>
+
+
+			</div>
+
+			<div id="decorative" class="grid_5 omega">
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slide" id="about" data-slide="2" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>About Us</h1>
+				<p align="center"><hr /></p>
+				<h2>Sub header</h2>
+
+			<div class="grid_6">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  voluptatem sequi nesciunt.</p>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est dolor sit amet.</p>
+
+				<p><button class="b1">Learn More</button></p>
+			</div>
+
+			<div class="grid_6 omega">
+			<p><img src="images/computer.png"></p>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slide" id="features" data-slide="2" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<div class="grid_4 omega">
+					<p><center><div class="feature1"><span></span></div></center></p>
+					<p><h3>Feature One</h3></p>
+					<p class="h">Quisque tincidunt, risus vitae auctor interdum, nisl massa ullamcorper erat, vel pellentesque odio massa ac.</p>
+				</div>
+
+				<div class="grid_4 omega">	
+					<p><center><div class="feature2"><span></span></div></center></p>
+					<p><h3>Feature Two</h3></p>
+					<p class="h">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae elementum ligula. Proin et tempor.</p>
+				</div>
+
+				<div class="grid_4 omega">
+					<p><center><div class="feature3"><span></span></div></center></p>
+					<p><h3>Feature Three</h3></p>
+					<p class="h">Aliquam tincidunt et sapien a condimentum. Phasellus sit amet nunc ligula. In pretium euismod dictum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slide" id="aboutslide" data-slide="2" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>Lorem Ipsum Dolor Sit Amet Consetetur</h1>
+				<h2>Sadipscing Elltr Sed Nullam Bibendum</h2>
+				<button class="b2">Button Two</button>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="slide" id="blurb" data-slide="2" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>A blurb about anything. Right here.</h1>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slide" id="services" data-slide="3" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>Services</h1>
+				<p><hr /></p>
+				<p>Lorem ipsum dolor sit amet, consetetur <strong>sadipscing elitr</strong>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+			<div class="grid_4v">
+			<img src="images/s1.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+
+			<div class="grid_4v">
+			<img src="images/s2.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+ 
+			<div class="grid_4v omega">
+			<img src="images/s3.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+
+			<div class="grid_4v">
+			<img src="images/s4.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+
+			<div class="grid_4v">
+			<img src="images/s5.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+ 
+			<div class="grid_4v omega">
+			<img src="images/s6.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+
+			<div class="grid_4v">
+			<img src="images/s7.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+
+			<div class="grid_4v">
+			<img src="images/s8.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+ 
+			<div class="grid_4v omega">
+			<img src="images/s9.png" class="a" align="left"><h2>LOREM IPSUM DOLOR</h2>
+			<div class="s">Doloremque laudantlum totam aperlam, lys eaque lpsa inventore veritatis.</div>
+			</div>
+			
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slide" id="work" data-slide="4" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>Work</h1>
+				<p><hr /></p>
+				<p>Lorem ipsum dolor <strong>sit amet</strong>, consetetur sadipscing elitr, sed diam nonumy.</p>
+</div></div>
+
+				<div class="workcontainer clearfix">
+
+					<div id="content" class="grid_12">
+
+						<p>
+						<div class="grid_14 omega"><div class="imgwrap"><div style="max-width:340px;"><img src="images/1.png"><span class="des"><h2>title of work</h2><h3>type of media</h3></span></div></div></div>
+
+						<div class="grid_14 omega"><div class="imgwrap"><div style="max-width:340px;"><img src="images/2.png"><span class="des"><h2>title of work</h2><h3>type of media</h3></span></div></div></div>
+
+						<div class="grid_14 omega"><div class="imgwrap"><div style="max-width:340px;"><img src="images/3.png"><span class="des"><h2>title of work</h2><h3>type of media</h3></span></div></div></div>
+
+						<div class="grid_14"><div class="imgwrap"><div style="max-w idth:340px;"><img src="images/4.png"><span class="des"><h2>title of work</h2><h3>type of media</h3></span></div></div></div>
+
+						<div class="grid_14 omega"><div class="imgwrap"><div style="max-width:340px;"><img src="images/5.png"><span class="des"><h2>title of work</h2><h3>type of media</h3></span></div></div></div>
+
+						<div class="grid_14 omega"><div class="imgwrap"><div style="max-width:340px;"><img src="images/6.png"><span class="des"><h2>title of work</h2><h3>type of media</h3></span></div></div></div>
+
+						<div class="grid_14 omega"><div class="imgwrap"><div style="max-width:340px;"><img src="images/7.png"><span class="des"><h2>title of work</h2><h3>type of media</h3></span></div></div></div>
+
+						<div class="grid_14"><div class="imgwrap"><div style="max-width:340px;"><img src="images/8.png"><span class="des"><h2>title of work</h2><h3>type of media</h3></span></div></div></div>
+						</p>
+				</div>
+					</div>
+	
+	</div>
+
+
+	<div class="slide" id="quoteslide" data-slide="4" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<p class="words"><img src="images/quotationmark.png" class="quote">Diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+				<p class="name">&mdash; John Smith</p>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slide" id="connected" data-slide="5" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>Get Connected</h1>
+				<p><hr /></p>
+				<p class="c">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore <strong>magna aliquyam erat</strong>!</p>
+
+				<div class="grid_13">
+					<p><center><div class="twitter"><span></span></div></center></p>
+					<h2>Twitter</h2>
+					<h3>see what we're tweeting</h3>
+				</div>
+
+				<div class="grid_13">	
+					<p><center><div class="facebook"><span></span></div></center></p>
+					<h2>Facebook</h2>
+					<h3>join the conversation</h3>
+				</div>
+
+				<div class="grid_13">
+					<p><center><div class="instagram"><span></span></div></center></p>
+					<h2>Instagram</h2>
+					<h3>our latest snapshots</h3>
+				</div>
+
+				<div class="grid_13">
+					<p><center><div class="youtube"><span></span></div></center></p>
+					<h2>YouTube</h2>
+					<h3>exclusive videos</h3>
+				</div>
+
+				<div class="grid_13">
+					<p><center><div class="google"><span></span></div></center></p>
+					<h2>Google+</h2>
+					<h3>be apart of our circle</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slide" id="footer" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<p><img src="images/footer.jpg"></p>
+				<p>&copy; 2014 lorem ipsum. created by alexis koss.</p>
+			</div>
+
+		</div>
+	</div>
+
+
+	
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+</body>
+</html>
