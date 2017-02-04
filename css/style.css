@@ -304,6 +304,10 @@ html, body{
 	overflow: auto;
 }
 
+.screen-shots {
+	text-align: center;
+}
+
 .work-one {
 	max-width: 43%;
 	float: left;
@@ -320,7 +324,7 @@ html, body{
 	margin-bottom: 1.5%;
 }
 
-.work-img-wrap {
+.work-img-wrap, .detailed-img-wrap {
 	position: relative;
 	max-width: 100%;
 }
@@ -330,7 +334,49 @@ html, body{
 	display: block;
 }
 
-.work-desc {
+.detailed {
+	max-height: 250px;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.detailed-img-wrap img {
+	max-height: 250px;
+	display: block;
+}
+
+@media (min-width: 420px) {
+	.detailed {
+		max-height: 290px;
+	}
+
+	.detailed-img-wrap img {
+		max-height: 290px;
+	}
+}
+
+@media (min-width: 650px) {
+	.detailed {
+		max-height: 380px;
+	}
+
+	.detailed-img-wrap img {
+		max-height: 380px;
+	}
+}
+
+@media (min-width: 820px) {
+	.detailed {
+		max-height: 400px;
+	}
+
+	.detailed-img-wrap img {
+		max-height: 400px;
+	}
+}
+
+.work-desc, .detailed-desc {
  	background: rgba(0,0,0,0.72);
 	text-align: center;
 	position: absolute;
@@ -347,14 +393,14 @@ html, body{
 	border: 8px solid #337ED9;
 }
 
-.work-desc  {
+.work-desc, .detailed-desc  {
 	display: flex;
 	justify-content: center; 
 	align-items: center; 
 }
 
 
-.work-img-wrap:hover .work-desc {
+.work-img-wrap:hover .work-desc, .detailed-img-wrap:hover .detailed-desc {
 	visibility: visible;
 	opacity: 1;
 	transition-duration: 0.6s;  
@@ -380,6 +426,14 @@ h3 {
 	font-style: italic;
 }
 
+.detailed-type {
+	font-size: 10px;
+	font-family: 'HelveticaNeue-Medium';
+	color: #ffffff;
+	margin: 5px 15px 0 15px;
+	font-style: italic;
+}
+
 .work-desc-text {
 	color: #ffffff;
 	font-size: 12px;
@@ -387,7 +441,7 @@ h3 {
 	margin: 10px 0 0 0;
 }
 
-.work-see-more a:link, .work-see-more a:visited, .work-see-more a:active{
+.work-see-more a:link, .work-see-more a:visited, .work-see-more a:active, .detailed-see-more a:link, .detailed-see-more a:visited, .detailed-see-more a:active {
 	color: #3C84DA;
 	font-family: 'HelveticaNeue-Medium';
 	text-transform: uppercase;
@@ -400,7 +454,7 @@ h3 {
 	-o-transition-duration: 0.6s; 
 }
 
-.work-see-more a:hover {
+.work-see-more a:hover, .detailed-see-more a:hover {
 	color: #ffffff;
 	transition-duration: 0.6s;  
 	-moz-transition-duration: 0.6s;  
@@ -408,7 +462,7 @@ h3 {
 	-o-transition-duration: 0.6s; 
 }
 
-.work-see-more {
+.work-see-more, .detailed-see-more {
 	bottom: 2%;
 	position: absolute;
 	margin: 0;
