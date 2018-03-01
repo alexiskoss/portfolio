@@ -158,6 +158,15 @@ html, body{
 	}
 }
 
+.header a {
+    color: #0051B2;
+	text-decoration: none;
+}
+
+.top {
+	background-color: #000;
+}
+
 /* Home */
 #home {
 	width: 100%;
@@ -324,12 +333,12 @@ html, body{
 	margin-bottom: 1.5%;
 }
 
-.work-img-wrap, .detailed-img-wrap {
+.work-img-wrap, .detailed-img-wrap, .screenshot {
 	position: relative;
 	max-width: 100%;
 }
 
-.work-img-wrap img {
+.work-img-wrap img, .screenshot img {
 	width: 100%;
 	display: block;
 }
@@ -341,7 +350,7 @@ html, body{
 	margin-bottom: 5px;
 }
 
-.detailed-img-wrap img {
+.detailed-img-wrap img, .screenshot img {
 	max-height: 250px;
 	display: block;
 }
@@ -351,7 +360,7 @@ html, body{
 		max-height: 290px;
 	}
 
-	.detailed-img-wrap img {
+	.detailed-img-wrap img, .screenshot img {
 		max-height: 290px;
 	}
 }
@@ -361,7 +370,7 @@ html, body{
 		max-height: 380px;
 	}
 
-	.detailed-img-wrap img {
+	.detailed-img-wrap img, .screenshot img {
 		max-height: 380px;
 	}
 }
@@ -371,7 +380,7 @@ html, body{
 		max-height: 400px;
 	}
 
-	.detailed-img-wrap img {
+	.detailed-img-wrap img, .screenshot img {
 		max-height: 400px;
 	}
 }
@@ -414,12 +423,12 @@ h3 {
 	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-size: 20px;
+	font-size: 24px;
 	margin: 0;
 }
 
 .work-type {
-	font-size: 8px;
+	font-size: 12px;
 	font-family: 'HelveticaNeue-Medium';
 	color: #A8A5A5;
 	margin: 0;
@@ -427,7 +436,7 @@ h3 {
 }
 
 .detailed-type {
-	font-size: 10px;
+	font-size: 12px;
 	font-family: 'HelveticaNeue-Medium';
 	color: #ffffff;
 	margin: 5px 15px 0 15px;
@@ -441,21 +450,13 @@ h3 {
 	margin: 10px 0 0 0;
 }
 
-.work-see-more a:link, .work-see-more a:visited, .work-see-more a:active, .detailed-see-more a:link, .detailed-see-more a:visited, .detailed-see-more a:active {
+.work-see-more {
 	color: #3C84DA;
 	font-family: 'HelveticaNeue-Medium';
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 12px;
 	text-align: center;
 	text-decoration: none;
-	transition-duration: 0.6s;  
-	-moz-transition-duration: 0.6s;  
-	-webkit-transition-duration: 0.6s;  
-	-o-transition-duration: 0.6s; 
-}
-
-.work-see-more a:hover, .detailed-see-more a:hover {
-	color: #ffffff;
 	transition-duration: 0.6s;  
 	-moz-transition-duration: 0.6s;  
 	-webkit-transition-duration: 0.6s;  
