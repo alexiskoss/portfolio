@@ -58,7 +58,7 @@ a:hover {
 	-o-transition-duration: 0.6s; 
 }
 
-.detailed-see-more a:link, .detailed-see-more a:active, .detailed-see-more a:visited {
+.detailed-see-more {
     color: #3C84DA;
     font-family: 'HelveticaNeue-Medium';
 	text-transform: uppercase;
